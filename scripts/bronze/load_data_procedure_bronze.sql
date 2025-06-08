@@ -1,3 +1,7 @@
+/*
+   This is an optimized code that not only loads the data from the csv files from source systems but also keeps the track of data loading time and the try catch block is used to help the dev debug by throwing the error message directly.
+*/
+
 CREATE OR ALTER PROCEDURE bronze.load_data AS
 BEGIN
      DECLARE @start_time DATETIME  ,@end_time DATETIME, @batch_start_time DATETIME, @batch_end_time DATETIME; 
